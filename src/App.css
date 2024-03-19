@@ -32,7 +32,50 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./Assets//Inter-Regular.ttf);
+}
+
+.boxLight {
+  background-color: hsl(227, 47%, 96%);
+}
+
+.igBar {
+  background: rgb(252, 196, 104);
+  background: linear-gradient(90deg, rgba(252, 196, 104, 1) 0%, rgba(223, 73, 150, 1) 100%);
+}
+
+.facebookBar {
+  background: hsl(208, 92%, 53%);
+}
+
+.inter {
+  font-family: Inter;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.followers {
+  font-size: 48px;
+}
+
+.green {
+  color: hsl(163, 72%, 41%);
+}
+
+.red {
+  color: hsl(356, 69%, 56%);
 }
