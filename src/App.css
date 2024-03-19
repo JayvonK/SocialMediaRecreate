@@ -105,6 +105,11 @@
   border-radius: 5px;
 }
 
+.boxDark {
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+}
+
 .igBar {
   background: rgb(252, 196, 104);
   background: linear-gradient(90deg, rgba(252, 196, 104, 1) 0%, rgba(223, 73, 150, 1) 100%);
@@ -174,6 +179,14 @@
 
 .lightTxt1 {
   color: hsl(228, 12%, 44%)
+}
+
+.darkTxt1 {
+  color: hsl(228, 34%, 66%)
+}
+
+.darkTxt2 {
+  color: hsl(0, 0%, 100%)
 }
 
 .lightTxt2 {

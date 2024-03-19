@@ -1,32 +1,34 @@
 import React from 'react'
 
-const FollowerCardComponent = (props: {bar: string, logo: string, arrow: string, username: string, number: string, type: string, update: string, color: string}) => {
+const FollowerCardComponent = (props: { bar: string, logo: string, arrow: string, username: string, number: string, type: string, update: string, color: string, cardClass: string, text1: string, text2: string}) => {
   return (
-    <div className="boxLight ">
-          <div className={'h-1 barRadius mb-1 ' + props.bar}></div>
+    <div className={props.cardClass}>
+      <div className={'h-1 barRadius mb-1 ' + props.bar}></div>
 
-          <div className='p-5'>
+      <div className='p-5'>
 
-            <div className='flex justify-center items-center min-h-[24px]'>
-              <img className='h-full mr-1' src={props.logo} alt="" />
+        <div className='flex justify-center items-center min-h-[24px]'>
 
-              <h1 className='username interBold lightTxt1'>{props.username}</h1>
-            </div>
+          <img className='h-full mr-1' src={props.logo} alt="" />
 
-              <div className='text-center interBold followersNum lightTxt2'>{props.number}</div>
-
-              <h4 className='text-center followers interLight username lightTxt1'>{props.type}</h4>
-
-            <div className='flex justify-center mt-5'>
-              <div className='flex flex-wrap-reverse content-center mr-1'>
-                <img className='arrows mb-[1px]' src={props.arrow} alt="" />
-              </div>
-              <h4 className={'interBold username ' + props.color}>{props.update}</h4>
-            </div>
-
-          </div>
+          <h1 className={'username interBold ' + props.text1}>{props.username}</h1>
 
         </div>
+
+        <div className={'text-center interBold followersNum ' + props.text2}>{props.number}</div>
+
+        <h4 className={'text-center followers interLight username ' + props.text1}>{props.type}</h4>
+
+        <div className='flex justify-center mt-5'>
+          <div className='flex flex-wrap-reverse content-center mr-1'>
+            <img className='arrows mb-[1px]' src={props.arrow} alt="" />
+          </div>
+          <h4 className={'interBold username ' + props.color}>{props.update}</h4>
+        </div>
+
+      </div>
+
+    </div>
   )
 }
 

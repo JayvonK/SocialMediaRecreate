@@ -1,11 +1,11 @@
 import React from 'react'
 
-const OverviewCardComponent = (props: { type: string, logo: string, arrow: string, percent: string, number: string, color: string }) => {
+const OverviewCardComponent = (props: { type: string, logo: string, arrow: string, percent: string, number: string, color: string, cardClass: string, text1: string, text2: string }) => {
     return (
-        <div className="boxLight pt-6 px-7 pb-3 min-h-28">
+        <div className={props.cardClass + " pt-6 px-7 pb-3 min-h-28"}>
                 <div className='grid grid-cols-2 mb-4'>
                     <div>
-                        <h3 className='heading interBold lightTxt1'>{props.type}</h3>
+                        <h3 className={'heading interBold ' + props.text1}>{props.type}</h3>
                     </div>
 
                     <div className='flex justify-end'>
@@ -14,7 +14,7 @@ const OverviewCardComponent = (props: { type: string, logo: string, arrow: strin
                 </div>
                 <div className='grid grid-cols-2'>
                     <div className='flex items-end'>
-                        <h3 className='title interBold lightTxt2'>{props.number}</h3>
+                        <h3 className={'title interBold ' + props.text2}>{props.number}</h3>
                     </div>
 
                     <div className='flex justify-end'>
