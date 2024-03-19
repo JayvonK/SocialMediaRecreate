@@ -1,4 +1,7 @@
-
+//Jayvon Khuth
+//3/19/24
+//Social Media Dashboard in React
+//Recreated a static socail media dashboard website using react typescript and tailwind. There's also additional features like light and dark mode, which I achieved by passing in props and state variables into the classnames of JSX elements. This recreation was fairly simple and easy, I enjoyed coding this all out. Also for the button I simply just followed a youtube video and added my own code to it.
 
 // Peer Reviewed By: Liam Garcia
 // Peer Review: It's a one to one replica of the example. The light and dark mode works properly. Great job as always!
