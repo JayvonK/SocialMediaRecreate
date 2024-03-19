@@ -1,7 +1,7 @@
 
 
-<!-- Peer Reviewed By: Liam Garcia-->
-<!-- Peer Review: It's a one to one replica of the example. The light and dark mode works properly. Great job as always!-->
+// Peer Reviewed By: Liam Garcia
+// Peer Review: It's a one to one replica of the example. The light and dark mode works properly. Great job as always!
 
 
 
