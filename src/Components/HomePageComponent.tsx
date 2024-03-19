@@ -33,14 +33,15 @@ function HomePageComponent() {
     }
 
     return (
-        <div className={'xl:px-44 pt-3 px-5 minH ' + bg}>
+        <div className={'xl:px-44 pt-3 px-6 minH ' + bg}>
             <div className={rectangle}>
             </div>
             <div className='grid xl:grid-cols-2 mb-5 relative'>
                 <div className='mt-6 mb-7'>
-                    <h1 className={'interBold title ' + text2}>Social Media DashBoard</h1>
+                    <h1 className={'interBold sm:title text-[23.5px] ' + text2}>Social Media DashBoard</h1>
                     <p className={'interBold heading ' + text1}>Total Followers: 23,004</p>
                 </div>
+                <hr />
                 <div className='flex justify-end'>
                     <h1>Dark Mode</h1>
                     <button onClick={handleClick}>Change</button>
