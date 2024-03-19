@@ -96,7 +96,9 @@
   min-height: 100vh;
 }
 
-
+.title {
+  font-size: 32px;
+}
 
 .boxLight {
   background-color: hsl(227, 47%, 96%);
@@ -151,7 +153,7 @@
 }
 
 .followers {
-  letter-spacing: 5.6px;
+  letter-spacing: 5px;
 }
 
 .green {
@@ -176,4 +178,14 @@
 
 .lightTxt2 {
   color: hsl(230, 17%, 14%);
+}
+
+.logos {
+  width: 20px;
+  height: 20px;
+}
+
+.arrows {
+  width: 8px;
+  height: 4px;
 }
