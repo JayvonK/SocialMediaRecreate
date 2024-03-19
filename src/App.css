@@ -61,6 +61,7 @@
   background-color:#FFFFFF;
 }
 
+
 .relative {
   position: relative;
   z-index: 1;
@@ -102,9 +103,21 @@
   border-radius: 5px;
 }
 
+.boxLight:hover {
+  background-color: hsl(227, 47%, 92%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .boxDark {
   background-color: hsl(228, 28%, 20%);
   border-radius: 5px;
+}
+
+.boxDark:hover {
+  background-color: hsl(228, 28%, 25%);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .igBar {
@@ -246,6 +259,11 @@
 
 input:checked + .slider {
   background: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+}
+
+.slider:hover {
+  background: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+  transition: 0.5s ease;
 }
 
 input:checked + .slider:before {

@@ -9,7 +9,7 @@ const OverviewCardComponent = (props: { type: string, logo: string, arrow: strin
                     </div>
 
                     <div className='flex justify-end'>
-                        <img className='logos' src={props.logo} alt="social media logo" />
+                        <img className='' src={props.logo} alt="social media logo" />
                     </div>
                 </div>
                 <div className='grid grid-cols-2'>
@@ -18,7 +18,7 @@ const OverviewCardComponent = (props: { type: string, logo: string, arrow: strin
                     </div>
 
                     <div className='flex justify-end'>
-                        <div className='flex items-end mb-[0.6rem]'>
+                        <div className='flex items-end mb-[2px]'>
                             <img className='arrows mb-[0.45rem] mr-1' src={props.arrow} alt="arrow indicator" />
                             <p className={'interBold username ' + props.color}>{props.percent}</p>
                         </div>

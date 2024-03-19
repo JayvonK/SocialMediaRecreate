@@ -39,16 +39,16 @@ function HomePageComponent() {
     }
 
     return (
-        <div className={'xl:px-44 pt-3 px-[26px] minH ' + bg}>
+        <div className={'xl:px-44 sm:px-20 pt-3 px-[26px] minH ' + bg}>
             <div className={rectangle}>
             </div>
-            <div className='grid sm:grid-cols-2 sm:mb-5 mb-10 relative'>
+            <div className='grid md:grid-cols-2 sm:mb-5 mb-10 relative'>
                 <div className='mt-6 sm:mb-7 mb-5'>
                     <h1 className={'interBold sm:text-[27px] text-[23.5px] ' + text2}>Social Media DashBoard</h1>
                     <p className={'interBold heading ' + text1}>Total Followers: 23,004</p>
                 </div>
-                <hr className={hrLine + ' sm:hidden'} />
-                <div className='flex sm:justify-end justify-between items-center sm:mt-0 mt-4'>
+                <hr className={hrLine + ' md:hidden'} />
+                <div className='flex md:justify-end justify-between items-center md:mt-0 mt-4'>
                     <h1 className={'heading interBold ' + text1}>Dark Mode</h1>
                     <label className='switch ml-3'>
                         <input onClick={handleClick} type="checkbox" />
@@ -57,7 +57,7 @@ function HomePageComponent() {
                 </div>
             </div>
 
-            <div className='grid lg:grid-cols-4  sm:grid-cols-3 sm:gap-8 gap-6 relative'>
+            <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:gap-8 gap-6 relative'>
                 <FollowerCardComponent bar={'facebookBar'} logo={facebookLogo} arrow={upArrow} username={'@nathanf'} number={'1987'} type={'FOLLOWERS'} update={'12 Today'} color={'green'} cardClass={cardClass} text1={text1} text2={text2} />
 
                 <FollowerCardComponent bar={'twitterBar'} logo={twitterLogo} arrow={upArrow} username={'@nathanf'} number={'1044'} type={'FOLLOWERS'} update={'99 Today'} color={'green'} cardClass={cardClass} text1={text1} text2={text2} />
@@ -70,7 +70,7 @@ function HomePageComponent() {
 
             <h1 className={'mt-10 mb-5 sm:text-[24px] text-[23.5px] interBold ' + text3}>Overview - Today</h1>
 
-            <div className='grid lg:grid-cols-4 sm:grid-cols-3 sm:gap-8 gap-4 pb-10'>
+            <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:gap-8 gap-4 pb-10'>
                 <OverviewCardComponent type={'Page Views'} logo={facebookLogo} number={'87'} percent={'3%'} arrow={upArrow} color={'green'} cardClass={cardClass} text1={text1} text2={text2} />
                 <OverviewCardComponent type={'Likes'} logo={facebookLogo} number={'52'} percent={'2%'} arrow={downArrow} color={'red'} cardClass={cardClass} text1={text1} text2={text2} />
                 <OverviewCardComponent type={'Likes'} logo={instagramLogo} number={'5462'} percent={'2257%'} arrow={upArrow} color={'green'} cardClass={cardClass} text1={text1} text2={text2} />

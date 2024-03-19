@@ -9,9 +9,9 @@ const FollowerCardComponent = (props: { bar: string, logo: string, arrow: string
 
         <div className='flex justify-center items-center min-h-[24px]'>
 
-          <img className='h-full mr-1' src={props.logo} alt="" />
+          <img className='h-full' src={props.logo} alt="" />
 
-          <h1 className={'username interBold ' + props.text1}>{props.username}</h1>
+          <h1 className={'username interBold ml-2 ' + props.text1}>{props.username}</h1>
 
         </div>
 
