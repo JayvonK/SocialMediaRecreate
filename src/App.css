@@ -70,7 +70,7 @@
   left: 0%;
   top: 0%;
   position: absolute;
-  height: 25vh;
+  height: 30vh;
   min-width: 100vw;
   background: hsl(225, 100%, 98%);
   border-radius: 0 0 25px 25px;
@@ -81,7 +81,7 @@
   left: 0%;
   top: 0%;
   position: absolute;
-  height: 25vh;
+  height: 30vh;
   min-width: 100vw;
   background: hsl(232, 19%, 15%);
   border-radius: 0 0 25px 25px;
@@ -96,9 +96,6 @@
   min-height: 100vh;
 }
 
-.title {
-  font-size: 32px;
-}
 
 .boxLight {
   background-color: hsl(227, 47%, 96%);
@@ -201,4 +198,57 @@
 .arrows {
   width: 8px;
   height: 4px;
+}
+
+.hrLine {
+  border: solid 1.5px hsl(228, 12%, 70%);
+}
+
+.darkHrLine {
+  border-top-width: 0.1px;
+  border-color:hsl(228, 28%, 30%);
+}
+
+.switch {
+  position: relative;
+  display: inline block;
+  width: 47px;
+  height: 24px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(230, 22%, 74%);
+  transition: 0.5s ease;
+  border-radius: 30px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  right: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.5s ease;
+  border-radius: 25px;
+}
+
+input:checked + .slider {
+  background: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+}
+
+input:checked + .slider:before {
+  transform: translateX(-23px);
+  background-color: hsl(228, 28%, 20%);
 }
